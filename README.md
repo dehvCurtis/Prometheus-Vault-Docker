@@ -18,6 +18,7 @@ Start Consul:
 $ docker-compose up -d consul
 
 Consul UI: http://localhost:8500
+
 Start Vault
 
 $ docker-compose up -d vault

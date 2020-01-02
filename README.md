@@ -36,7 +36,7 @@ $ vault operator init -key-shares=3 -key-threshold=2 > /tmp/docker-vault-keys.tx
 ```
 Unseal Vault:
 ```
-$ cat /tmp/docker-vault-keys.txt
+$ cat /tmp/docker-keys.txt | grep Key
 $ vault operator unseal <token1> 
 $ vault operator unseal <token1> 
 $ vault operator unseal <token3> 

@@ -1,7 +1,7 @@
 # Prometheus-Vault-Docker
 Promethesu Vault Docker for testing
 
-Overview
+# Overview
 
 This repository will create a Vault server using Consul backend with telemetry metrics using Prometheus.
 
@@ -11,9 +11,9 @@ The following containers are included:
     vault
     prometheus
 
-#Configure Consul#
+## Configure Consul
 
-#Start Consul
+Start Consul:
 
 $ docker-compose up -d consul
 
@@ -22,7 +22,7 @@ Start Vault
 
 $ docker-compose up -d vault
 
-#Configure Vault
+## Configure Vault
 
 Initialize Vault:
 
@@ -38,7 +38,7 @@ Configure Vault:
 $ vault login # use root token
 $ vault secrets enable -path=secret/ kv
 
-#Configure Prometheus
+## Configure Prometheus
 
 Add the root token to the prometheus.yml file in the bearer_token: section.
 

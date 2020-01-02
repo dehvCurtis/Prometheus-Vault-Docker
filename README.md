@@ -29,7 +29,7 @@ Initialize Vault:
 ```
 $ export VAULT_ADDR='http://127.0.0.1:8200'
 
-$ vault operator init -key-shares=3 -key-threshold=2 # remember to keep track of the keys somewhere
+$ vault operator init -key-shares=3 -key-threshold=2 > /tmp/docker-vault-keys.txt
 ```
 Unseal Vault:
 ```

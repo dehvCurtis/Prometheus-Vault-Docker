@@ -43,7 +43,7 @@ $ vault operator unseal <token3>
 Configure Vault:
 ```
 $ cat /tmp/docker-keys.txt | grep Token
-$ vault login # use root token
+$ vault login <root token>
 $ vault secrets enable -path=secret/ kv
 ```
 ## Configure Prometheus

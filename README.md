@@ -31,7 +31,6 @@ Vault UI: http://localhost:8200
 Initialize Vault:
 ```
 $ export VAULT_ADDR='http://127.0.0.1:8200'
-
 $ vault operator init -key-shares=3 -key-threshold=2 > /tmp/docker-vault-keys.txt
 ```
 Unseal Vault:
@@ -43,8 +42,8 @@ $ vault operator unseal <token3>
 ```
 Configure Vault:
 ```
+$ cat /tmp/docker-keys.txt | grep Token
 $ vault login # use root token
-
 $ vault secrets enable -path=secret/ kv
 ```
 ## Configure Prometheus

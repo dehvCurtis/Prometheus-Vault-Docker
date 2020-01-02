@@ -23,6 +23,9 @@ Start Vault
 ```
 $ docker-compose up -d vault
 ```
+
+Vault UI: http://127.0.0.1:8200
+
 ## Configure Vault
 
 Initialize Vault:

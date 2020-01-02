@@ -17,7 +17,7 @@ Start Consul:
 
 $ docker-compose up -d consul
 
-Consul UI at http://localhost:8500
+Consul UI: http://localhost:8500
 Start Vault
 
 $ docker-compose up -d vault
@@ -46,7 +46,7 @@ Start Prometheus
 
 docker-compose up -d prom
 
-Prometheus UI at http://localhost:9090
+Prometheus UI: http://localhost:9090
 
 Stop Containers
 
